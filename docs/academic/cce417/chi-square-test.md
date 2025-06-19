@@ -136,8 +136,9 @@ Observed Data (Contingency Table):
 $\chi^2 = \sum [(O - E)^2 / E]$  
 Here O = Observed value, E = Expected value
 
-$\chi^2 = (40 - 30)^2 / 30 + (60 - 70)^2 / 70 + (20 - 30)^2 / 30 + (80 - 70)^2 / 70$
-$\chi^2 = 3.33 + 1.43 + 3.33 + 1.43 = 9.52$
+$$\chi^2 = (40 - 30)^2 / 30 + (60 - 70)^2 / 70 + (20 - 30)^2 / 30 + (80 - 70)^2 / 70$$ 
+
+$$\chi^2 = 3.33 + 1.43 + 3.33 + 1.43 = 9.52$$
 
 Degrees of Freedom, $df = (rows - 1) (columns - 1) = (2 - 1) (2 - 1) = 1$
 
