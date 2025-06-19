@@ -1,0 +1,78 @@
+site_name: Avro's Notes
+site_description: A collection of notes on various topics
+site_author: Avro
+
+# Theme configuration
+theme:
+  name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png  
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: #3498DB
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: #2C3E50
+      accent: #2980B9
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    # - navigation.footer
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+
+# Custom styling
+extra_css:
+  - stylesheets/extra.css
+
+# JavaScript
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Site customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ItsTHEAvro
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/jyotirmoy-avro
+  generator: false
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Categories:
+    - Academic: academic/index.md
+    - Miscellaneous: misc/index.md
+  - About: about.md
