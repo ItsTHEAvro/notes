@@ -4,4 +4,4 @@ Welcome to my academic notes section. Here, I'm sharing my study notes, insights
 
 ## Latest Notes
 
-- [Chi Square Test](cce417/Chi-Square-Test.md) [CCE-417 Data Warehousing and Mining]
+- [Chi Square Test](cce417/chi-square-test.md) [CCE-417 Data Warehousing and Mining]
