@@ -139,7 +139,7 @@ Here are the age distribution plots that help us understand which features are r
 ![Age Distribution by Sex](images/age_distribution_by_Sex.png)
 ![Age Distribution by Embarked](images/age_distribution_by_Embarked.png)
 
-After looking at the plots, we can see that Age is related to Pclass, Parch, and SibSp. So let's group by these columns and use their median ages:
+After looking at the plots, we can see that the different categories of the Sex column (male, female) have similar median ages, and the same goes for the categories in the Embarked column (S, C, Q). Because of this, using these columns for age imputation might introduce bias without much benefit. On the other hand, the categories in Pclass, Parch, and SibSp show more variation in median ages. So, we will group by these columns and use their median ages to fill in the missing values.
 
 ```python
 # Group by Pclass, SibSp, Parch and get the median age for each group
