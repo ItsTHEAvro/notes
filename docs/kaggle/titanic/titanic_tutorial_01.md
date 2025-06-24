@@ -2,7 +2,7 @@
 
 Welcome to my walkthrough of the classic Titanic dataset! This is one of those legendary machine learning problems that everyone tackles at some point. We're going to predict who survived the Titanic disaster based on passenger data. 
 
-> **Want to follow along?** You can find the complete Jupyter notebook for this tutorial [here](notebook/titanic_notebook.ipynb).
+> **Want to follow along?** You can find the complete Jupyter notebook for this tutorial [here](https://github.com/ItsTHEAvro/notes/blob/main/docs/kaggle/titanic/notebook/titanic_notebook.ipynb).
 > 
 > **Kaggle Competition:** This tutorial is based on the [Titanic - Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic/) competition on Kaggle.
 
