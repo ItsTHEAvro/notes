@@ -56,9 +56,7 @@ extra_css:
 # JavaScript
 extra_javascript:
   - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
 
 # Site customization
 extra:
@@ -75,5 +73,6 @@ nav:
   - Categories:
     - Academic: academic/index.md
     - Kaggle Competitions: kaggle/index.md
+    - Programming: programming/index.md
     - Miscellaneous: misc/index.md
   - About: about.md

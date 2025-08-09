@@ -2,6 +2,8 @@
 
 Welcome to my academic notes section. Here, I'm sharing my study notes, insights, and everything I jot down from classes and lectures. Think of it as my public study journal – a place to organize my thoughts and hopefully help you out too. Feel free to dive in!
 
-## Latest Notes
+### CCE-411 Algorithm Engineering
+- [K Means Clustering Algorithm Explained with Examples](cce411/k-means-clustering-with-example.md)
 
-- [Chi Square Test](cce417/chi-square-test.md) [CCE-417 Data Warehousing and Mining]
+### CCE-417 Data Warehousing and Mining
+- [Chi Square Test](cce417/chi-square-test.md) 
