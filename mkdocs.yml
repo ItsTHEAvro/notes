@@ -74,5 +74,6 @@ nav:
     - Academic: academic/index.md
     - Kaggle Competitions: kaggle/index.md
     - Programming: programming/index.md
+    - Cybersecurity: cybersecurity/index.md
     - Miscellaneous: misc/index.md
   - About: about.md
