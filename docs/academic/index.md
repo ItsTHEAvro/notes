@@ -7,3 +7,6 @@ Welcome to my academic notes section. Here, I'm sharing my study notes, insights
 
 ### CCE-417 Data Warehousing and Mining
 - [Chi Square Test](cce417/chi-square-test.md) 
+
+### CCE-416 Networking - Routing and Switching Sesional
+- [Network Configuration Commands](cce416/network-configutaion-commands)
