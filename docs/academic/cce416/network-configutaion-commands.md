@@ -155,7 +155,7 @@ VLAN 1 has all the features of any VLAN, except it cannot be renamed or deleted.
 
 #### Creating a VLAN
 
-![creating-student-vlan.png](creating-student-vlan.png)
+![creating-student-vlan.png](creating-student-vlan.png)<br/>
 ```
 S1# configure terminal
 S1(config)# vlan 20
@@ -179,7 +179,7 @@ S1(config-if)# switchport access vlan 20
 S1(config-if)# end
 ```
 It makes port **F0/18** an **access port** and assigns it to **VLAN 20**, so any device plugged into that port becomes part of VLAN 20.
-![vlan-config-port.png](vlan-config-port.png)
+![vlan-config-port.png](vlan-config-port.png)<br/>
 #### Remove VLAN Port Assignment
 ```
 S1(config)# int fa0/18
@@ -276,7 +276,7 @@ Operational private-vlan: none
 <output omitted>
 ```
 #### Legacy Inter-VLAN Routing
-![legacy-inter-vlan-routing.png](legacy-inter-vlan-routing.png)
+![legacy-inter-vlan-routing.png](legacy-inter-vlan-routing.png)<br/>
 This setup is a classic example of **Inter-VLAN Routing**. Here’s the main goal:
 - **VLANs Create Separation:** By default, devices in **VLAN 10** (like PC1) are in their own isolated broadcast domain and _cannot_ communicate with devices in **VLAN 30** (like PC3). They are on completely different subnets (172.17.10.0/24 and 172.17.30.0/24).
 - **Routers Create Connection:** To allow communication _between_ these two different networks, you must use a Layer 3 device (a router).
@@ -343,7 +343,7 @@ R1#
 4. The switch receives the packet on `F0/5` and sends it to `F0/6` (both in VLAN 30).
 5. PC3 (172.17.30.23) receives the packet.
 #### Router-on-a-Stick Inter-VLAN Routing
-![router-on-a-stick.png](router-on-a-stick.png)
+![router-on-a-stick.png](router-on-a-stick.png)<br/>
 Here’s the main goal:
 - **VLANs Create Separation:** By default, devices in **VLAN 10** (like PC1) are in their own isolated broadcast domain and _cannot_ communicate with devices in **VLAN 30** (like PC3). They are on completely different subnets (172.17.10.0/24 and 172.17.30.0/24).
 - **Routers Create Connection:** To allow communication _between_ these two different networks, you must use a Layer 3 device (a router).
