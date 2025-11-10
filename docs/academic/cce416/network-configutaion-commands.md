@@ -45,7 +45,7 @@ Gateway Distance Last Update
 Distance: (default is 120)
 R1#
 ```
-This output confirms most RIP parameters, including the following:
+This output confirms most RIP parameters, including the following:  
 - RIP routing is configured and running on router R1.
 - The values of various timers; for example, the next routing update will be sent by R1 in 16 seconds.
 - The version of RIP configured is currently RIPv1.
@@ -78,7 +78,7 @@ Automatic network summarization is not in effect
 R1#
 ```
 #### Configure Passive Interfaces
-> RIP updates really only need to be sent out interfaces that are connected to other RIP enabled routers.
+RIP updates really only need to be sent out interfaces that are connected to other RIP enabled routers.
 ```
 R1(config)# router rip
 R1(config-router)# passive-interface g0/0
@@ -102,7 +102,7 @@ Distance: (default is 120)
 R1#
 ```
 #### Propagate a Default Route
-> To propagate a default route in RIP, the edge router must be configured with two things:
+To propagate a default route in RIP, the edge router must be configured with two things:
  - A default static route using the **ip route 0.0.0.0 0.0.0.0** command.
  - The **default-information originate** router configuration command. This instructs R1 to originate default information by propagating the static default route in RIP updates.
 ```
@@ -230,7 +230,7 @@ ES1#
 ```
 Sets **F0/1** as a trunk carrying VLANs **10, 20, 30, and 99**, with **99** as the native VLAN. The **native VLAN** is the VLAN that carries **untagged traffic** on a trunk link — traffic without a VLAN ID.
 #### Resetting VLAN to Default state
-By default, a switch port is in **access mode** and belongs to **VLAN 1** (no trunking, no special settings).
+By default, a switch port is in **access mode** and belongs to **VLAN 1** (no trunking, no special settings).<br/>
 - **`no switchport trunk allowed vlan`** → allows **all VLANs** on the trunk (removes any restrictions). 
 - **`no switchport trunk native vlan`** → sets the **native VLAN back to VLAN 1** (removes a custom native VLAN).
 One controls **which VLANs can pass**, the other controls **which VLAN is untagged**. An **untagged VLAN** is the VLAN assigned to carry **frames without a VLAN tag** on a trunk port. By default, this is the **native VLAN**.
@@ -277,7 +277,7 @@ Operational private-vlan: none
 ```
 #### Legacy Inter-VLAN Routing
 ![legacy-inter-vlan-routing.png](legacy-inter-vlan-routing.png)<br/>
-This setup is a classic example of **Inter-VLAN Routing**. Here’s the main goal:
+This setup is a classic example of **Inter-VLAN Routing**. Here’s the main goal:<br/>
 - **VLANs Create Separation:** By default, devices in **VLAN 10** (like PC1) are in their own isolated broadcast domain and _cannot_ communicate with devices in **VLAN 30** (like PC3). They are on completely different subnets (172.17.10.0/24 and 172.17.30.0/24).
 - **Routers Create Connection:** To allow communication _between_ these two different networks, you must use a Layer 3 device (a router).
 - **The Solution:** The router (R1) is configured to act as the **default gateway** for _both_ VLANs, allowing it to receive traffic from one VLAN and "route" it to the other.
@@ -344,7 +344,7 @@ R1#
 5. PC3 (172.17.30.23) receives the packet.
 #### Router-on-a-Stick Inter-VLAN Routing
 ![router-on-a-stick.png](router-on-a-stick.png)<br/>
-Here’s the main goal:
+Here’s the main goal:<br/>
 - **VLANs Create Separation:** By default, devices in **VLAN 10** (like PC1) are in their own isolated broadcast domain and _cannot_ communicate with devices in **VLAN 30** (like PC3). They are on completely different subnets (172.17.10.0/24 and 172.17.30.0/24).
 - **Routers Create Connection:** To allow communication _between_ these two different networks, you must use a Layer 3 device (a router).
 - **The Solution:** The router (R1) is configured to act as the **default gateway** for _both_ VLANs, allowing it to receive traffic from one VLAN and "route" it to the other.
